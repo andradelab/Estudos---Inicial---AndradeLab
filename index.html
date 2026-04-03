@@ -1,0 +1,58 @@
+<!DOCTYPE html> <!-- Esta é a declaração do tipo de documento (Document Type Declaration). Ela instrui o mecanismo de renderização do navegador de que o documento 
+a seguir deve ser interpretado segundo as regras estritas do HTML5. -->
+
+<html lang="pt-BR"> <!--Abertura da tag raiz (root element). Ela encapsula absolutamente todo o código da página. O atributo lang="pt-BR" é 
+    uma declaração de metadados obrigatória para que leitores de tela e robôs de busca (como o Googlebot) saibam que o idioma do documento é o Português do Brasil.-->
+
+    <head> <!--Abertura do cabeçalho do documento. Esta área é restrita a metadados, links para folhas de estilo (CSS) e scripts. Nada inserido aqui será desenhado na tela principal do usuário.-->
+    
+    <meta charset="UTF-8"> <!--UTF8 É o padrão de códificação mais utilizado no mundo , ele possui um catálogo gigantesco que consegue ler e exibir praticamente qualquer 
+    caractere de qualquer idioma, aalém de simbolos matemáticos e emojis. Em relação a importância , nossa lingua ém cheia de acentuação (á,é,ô,ã) e o cedilha (ç). É o UTF-8 que garante 
+    que esses  caracteres sejam processados e exibidos perfeitamente na tela, caso você esqueça , o browser pode errar a adivinhação , uma palavra normal como "ação", pode aparecer como
+    AÃ§Ã£o ou Aao. Por regra ele deve ser uma das primeiras tags dentro do <head>-->
+
+    <meta name="viewport" content="width=device-width , inicial-scale=1.0"> <!--Metadado de controle de área de visualização. O atributo width=device-width diz ao navegador para igualar 
+    a largura da página à largura física do dispositivo. O initial-scale=1.0 define o nível de zoom inicial como 100%. É o pilar do web design responsivo.-->
+
+    <title></title> <!--Elemento de título. Define a string de texto que será injetada na aba do navegador do sistema operacional e servirá como o título 
+    do link nas páginas de resultados dos motores de busca (SERPs).-->
+</head> <!--Fechamento obrigatório da seção de metadados-->
+<body><!--Abertura do corpo do documento. Este é o contêiner de renderização visual. Tudo o que o usuário consome visualmente ou interage fisicamente (cliques, toques) deve estar contido aqui-->
+    <header><!--Abertura do elemento semântico de cabeçalho estrutural. Usado para agrupar elementos introdutórios do escopo em que se encontrava (neste caso , o escopo global da página)-->
+        <h1>
+            <!-- elemento de titulo de nivel 1 (Heading 1). É a tag de maior peso hieráquico na arvore do documento. Semanticamente , deve existir apenas um <h1> principal por 
+                pagina para indicar o assunto central -->
+        </h1>
+    </header> <!--fechamento do cabeçalho estrutural-->
+    
+    <nav><!--abertura do elemento de navegação. Um contêiner semântico estritamente reservado para os blocos de links primários que guiam o usuário pelo ecossistema do site-->
+<p><!--elemento parágrafo na tag nav-->
+
+</p>
+    </nav>
+    
+    <main> <!--Abertura do container de conteudo principal. Define a área de maior relevância do documento. O padrão W3C dita que deve haver apenas um elemento <main> visivel por documento.-->
+        <p>
+
+        </p>
+        <section> <!-- Abertura do elemento de seção. Trata-se de um agrupamento temático genérico de conteúdo, geralmente acompanhado por um cabeçalho própio.-->
+            <h2></h2><!--Elemento de título nivel 2 (Heading2). Indica uma subseção pertencente ao tópico superior-->
+            <p></p>
+        </section><!--Fechamento do agrupamento temático-->
+
+        <article> <!--Abertura de elemento de artigo. Define uma composição independente e autossuficiente no documento. Seu conteudo deve fazer sentido lógico mesmo se extraido de seu contexto original -->
+            <h2></h2><!--Titulo de nivel 2 estabelecendo a hierarquia interna do artigo.-->
+            <p></p>
+        </article><!--Fechamento do bloco independente.-->
+
+        <aside><!--Abertura do elemento de conteudo tangencial. Semântica aplicada a conteúdos que se relacionam indiretamente com o assunto principal (como barras laterais ou glossários)-->
+            <h3></h3><!--Titulo de nivel 3 (Heading 3). Uma subdivisão hierárquica inferior ao <h2> -->
+            <p></p>
+        </aside> <!--Fechamento da área Tangencial-->
+
+    </main> <!--Fechamento do contêiner de conteudo principal. O núcleo da pagina termina aqui.-->
+    <footer><!--Abertura do elemento semântico do Rodapé. Contém metadados visuais de encerramento do documento, como autoria, dados legais ou navegação secundária.-->
+        <p></p>
+    </footer><!--Fechamento do rodapé estrutural.-->
+</body> <!-- Fechamento do corpo do documento. Fim das intruções de denderização visual para o navegador.-->
+</html><!--Fechamento da Tag Raiz. Sinaliza o fim absoluto e definitivo do documento de hipertexto.-->
