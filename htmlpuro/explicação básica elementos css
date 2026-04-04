@@ -1,0 +1,47 @@
+# 🎨 Fundamentos do CSS (Cascading Style Sheets)
+
+O CSS é a linguagem usada para descrever a apresentação de um documento escrito em HTML. Enquanto o HTML é o esqueleto (a estrutura), o CSS é a pele, as roupas e a maquiagem (o design e layout).
+
+## 1. A Anatomia de uma Regra CSS
+Todo código CSS segue uma estrutura lógica de três partes principais:
+
+\`\`\`css
+seletor {
+    propriedade: valor;
+}
+\`\`\`
+
+* **Seletor:** Diz ao navegador *quem* você quer estilizar (ex: um `h1`, um `p`, um botão).
+* **Propriedade:** Diz *o que* você quer mudar nesse elemento (ex: a cor, o tamanho, a margem).
+* **Valor:** É o *resultado* que você quer aplicar (ex: vermelho, 16px, 10px).
+
+## 2. Os Três Seletores Principais
+Como escolhemos qual elemento estilizar?
+
+* **Seletor de Tag (Geral):** Pega TODOS os elementos daquela tag na página.
+  \`\`\`css
+  p { color: blue; } /* Todos os parágrafos ficarão azuis */
+  \`\`\`
+* **Seletor de Classe (Específico - usa o ponto `.`):** Usado quando queremos estilizar um grupo específico de elementos. No HTML você usa `class="destaque"`.
+  \`\`\`css
+  .destaque { font-weight: bold; } /* Apenas elementos com essa classe ficam em negrito */
+  \`\`\`
+* **Seletor de ID (Único - usa a hashtag `#`):** Usado para um elemento único e exclusivo na página (como o cabeçalho principal). No HTML você usa `id="cabecalho"`.
+  \`\`\`css
+  #cabecalho { background-color: black; }
+  \`\`\`
+
+## 3. As Propriedades Básicas de Texto e Cor
+* `color`: Altera a cor do texto (ex: `color: #333333;`).
+* `background-color`: Altera a cor de fundo do elemento.
+* `font-family`: Define qual fonte será usada (ex: `font-family: 'Roboto', sans-serif;`).
+* `font-size`: Altera o tamanho da letra (ex: `font-size: 16px;`).
+* `text-align`: Alinha o texto (valores: `left`, `center`, `right`, `justify`).
+
+## 4. O Box Model (O Modelo de Caixa)
+Este é o conceito MAIS IMPORTANTE do CSS. O navegador enxerga todo elemento HTML (um título, um parágrafo, uma imagem) como uma caixa retangular invisível composta por 4 camadas:
+
+1. **Content (Conteúdo):** Onde o texto ou a imagem realmente fica. Usamos `width` (largura) e `height` (altura) para alterar seu tamanho.
+2. **Padding (Preenchimento Interno):** É o espaço entre o conteúdo e a borda. Pense nisso como o "recheio" ou o espaço para o texto "respirar" dentro da caixa.
+3. **Border (Borda):** É o limite da caixa, a "parede" que envolve o padding e o conteúdo.
+4. **Margin (Margem Externa):** É o espaço do lado de fora da borda. Serve para empurrar os outros elementos para longe, criando distanciamento entre as caixas.
